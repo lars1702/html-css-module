@@ -1,17 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
-/*for list on top*/
-.nav-bar {
-    font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
-    background-color: #cb3837; /*wombat-red*/
-    /*--wombat-red-hover: #c40b0a; */
-    display: -webkit-box;
+
+
+/*--------------------------\
+|  General style following  |
+\--------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif
 }
-.nav-left-logo .heart{
 
+.clearfix {
+    clear: both;
+}
+.overflowfix {
+    overflow: auto; /*makes it so content is not "flowing" outside its container*/
+}
+.standard-margin { /*It seems like there is about 10px margin between manyt of the header elements. leaving this here to see.*/
+margin: 10px;
+}
+
+.col { /*Single column*/
+    float: left;
+    display: block;
+}
+
+.link-deco-fix {
+    text-decoration: none;
+}
+
+/*----------------------------\
+| Specific sections following |
+\----------------------------*/
+
+/*-----------NAVIGATION BLOCK-----------*/
+.nav-bar { /*The whole nav-bar-element*/
+    background-color: #C12127;
+    color: rgba(255,255,255,0.8);
+    padding: 10px 0; /*The all-important passing on the nav-bar dictates how tall it is without the content being "lost" if something goes wrong*/
+    height: auto;
+  }
+.nav-bar a{ /*All links in nav-bar*/
+    color: rgba(255,255,255,0.8);
+}
+.nav-bar-left { /*Left div-section of the nav-bar, with heart and span-elements*/
+    margin: 0;
+    display: inline-block;
+}
+.heart {
+    margin: 0 20px;
+    font-size: 0.9rem;
+}
+.nav-bar-right { /*the whole ul-element to the top-right*/
+    float: right;
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+.nav-bar-right li { /*all the five li-elements to the top-right*/
+    display: inline-block;
+    margin: 0 10px;
 }
 
 
-/*FOR THE BUTTONS?????*/
+
+
+
+
+
+
+
+/*-----------HEADER SECTION-----------*/
+.header-section { /*This affects the whole section*/
+    background-color: #1D4E69;
+    background-image: url("C:/Users/self-/Documents/code/prework/HTML & CSS exercise/html-css-module-master/images/city-scape.svg");
+    display: block;
+    width: 100%;
+    height: 320px;
+    padding-bottom: 120px;
+}
+.upper-header-div { /*The npm-logo, search bar, and bear-logo*/
+    height: 60px;
+    max-width: 100%;
+    padding: 10px 10px;
+    color: white;
+
+}
+.npm-logo {
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+}
+#search-bar-btn-div {
+}
+
+#search-bar-btn-div #text {
+    background-color: rgb(31, 82, 111);
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-size: 1em;  
+    position: relative;
+}
+
+.sign-up-div {
+    height: 45px;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    margin: 0 10px;
+}
+.sign-up-div li {
+    display: inline-block;
+
+}
+.sign-up-div img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+.sign-up-div a {
+    color: white;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR THE BUTTONS?????
 .btn-primary {
     color: #fff;
     background-color: #34495e;
@@ -36,63 +174,4 @@
     user-select: none;
     text-decoration: none;
 }
-
-h1, h2, h3, h4, h5 {font-family: robot;} /*FIND THIS*/
-h1 {color: whitesmoke;font-size: 9em;text-align: center;text-transform: uppercase}
-h2 {color: #008080;font-size: 5em;text-align: center;text-transform: uppercase;line-height: 4em;}
-h3 {font-size: 4.2em;text-align: center;}
-h4 {height:8rem; font-size: 1.5em;letter-spacing: 0.4px;margin: 15px;}
-h5 {font-size: 1.2em;}
-
-
-.nav-right-ul{
-    background-color: red; /*find out proper color later*/
-    list-style-type: none;
-    padding-left: 0;
-    padding-left: 30px;
-    margin: 0; /*This is what the source code suggests at least*/
-
-}
-/*li*/
-.nav-li {
-    display:inline-block;
-    margin-right: 1rem; /*16px*/
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------------------------------------------*/
-/*NAVIGATION BLOCK*/
-/*white-on-dark style*/
-.nav-bar {
-    background-color: rgb(25, 33, 41);
-    color: white;
-    height: 40px;
-}
-.nav-bar-item ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: auto;
-}
-.nav-bar-ul {
-    width: 1200px;
-    margin: auto;
-}
-.nav-bar .nav-bar-ul .nav-bar-li {
-    list-style-type: none;
-    text-align: center;
-    float: left;
-    width: 33%;
-}
+*/

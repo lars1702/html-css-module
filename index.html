@@ -5,45 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>npm</title>
+  <link rel="stylesheet" type="text/css" class="link-deco-fix" href="style.css">
 </head>
 <body>
 
-<!--NAVIGATION block: should show three links on top of page.-->
+
+
+<!--RED NAV-BAR - home & other links
+        (navigation-bar)-->
     <nav class="nav-bar">
-        <div class="nav-left-logo">
-            <a class="link-no-underline heart" href="#">♥︎</a>
-            <span class="acronym">Navel Pondering Mantra</span>
+        <div class="nav-bar-left">
+            <a class="heart" class="link-deco-fix" href="#">❤</a>
+            <span class="acronym">Harambe gave his life for your sins</span>
         </div>
-        <ul class="nav-right-ul">
-            <li><a class="link-no-underline"href="#">npm Enterprise</a></li>
-            <li><a class="link-no-underline"href="#">features</a></li>
-            <li><a class="link-no-underline"href="#">pricing</a></li>
-            <li><a class="link-no-underline"href="#">documentation</a></li>
-            <li><a class="link-no-underline"href="#">support</a></li>
+        <!--NAV RIGHT AREA-->
+        <ul class="nav-bar-right">
+            <li><a class="link-deco-fix" href="#">npm Enterprise</a></li>
+            <li><a class="link-deco-fix" href="#">features</a></li>
+            <li><a class="link-deco-fix" href="#">pricing</a></li>
+            <li><a class="link-deco-fix" href="#">documentation</a></li>
+            <li><a class="link-deco-fix" href="#">support</a></li>
+        <div class="clearfix"></div>
         </ul>
     </nav>
 
 
 
-<!-- HEADER: with city in work and text and buttons-->
-    <header>
-        <img src="images/npm-logo.png" alt="npm-logo">
-        <form id="search" action="">
-            <input type="text" placeholder="Search packages">
-            <input type="submit" name="make-search" id="make-search">
 
-            <div class="sign-up">
-            <p><a class="link-no-underline"href="#">sign up</a> or <a class="link-no-underline"href="#">log in</a> 
-            <img src="images/bear-logo.png" alt="bear-logo">
+<!-- SEARCH & SIGN-UP 
+        (header)-->
+    <header class="header-section">
+
+        <div class="upper-header-div">
+
+        <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo">
+        <div id="search-bar-btn-div">
+        <form id="search" action="">
+            <input id="text" type="text" placeholder="find packages">
+            <input type="submit" name="search-btn" id="search-btn">
+            <div class="sign-up-div">
+            <ul>
+                <li><a class="link-deco-fix" href="#">sign up</a> or <a class="link-deco-fix" href="#">log in</a></li>
+                <li><img src="images/bear-logo.png" alt="bear-logo"></li>
+            </ul> 
             </div>
         </form>
+        </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+
+        <div class="sign-up-orgs">
         <h1>Build amazing things</h1>
         <p>npm is the package manager for JavaScript and the world’s largest software registry. Discover packages of reusable code — and assemble them in powerful new ways.</p>
+        <a class="link-deco-fix" href="#">Sign up for npm</a>
+        </div>
     </header>
 
 
 
-<!--ABOUT NPM ORGS - city skyline background(section 1)-->
+
+<!--ABOUT NPM ORGS - city skyline background
+    (section 1)-->
     <section>
         <img src="images/collaboration.svg" alt="Teammates standing together" width="410" height="245">
         <h2>npm Orgs is powerful collaboration — for free</h2>
@@ -51,31 +75,33 @@
             <li>Encourage code discovery and re-use within teams</li>
             <li>Publish and control access to your own namespace</li>
             <li>Manage public and private code with the same workflow</li>
-            <a class="link-no-underline"href="#">Sign up for Orgs</a>
-            <p>or, <a class="link-no-underline"href="#">Learn more about Orgs</a></p>
         </ul>
+        <a class="link-deco-fix" href="#">Sign up for Orgs</a>
+        <p>or, <a class="link-deco-fix" href="#">Learn more about Orgs</a></p>
     </section>
 
 
 
-<!--WHAT IS NPM (section 2)-->
+<!--WHAT IS NPM 
+    (section 2)-->
     <section>
         <h2>What is npm?</h2>
         <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share &amp; receive feedback with others.</p>
-        <a class="link-no-underline"class="btn btn-primary" href="#">Install npm</a> 
+        <a class="link-deco-fix" href="#">Install npm</a> 
         <img src="" alt="">
         <!--Cant seem to make these classes work for some reason. Bah. -->
     </section>
 
 
-<!--WHAT CAN YOU MAKE - DISCOVER (section 3)-->
+<!--WHAT CAN YOU MAKE - DISCOVER 
+    (section 3)-->
     <section id="what-can-you-make">
         <h2>What can you make with 475,000 building blocks?</h2>
         <p>The npm registry hosts the world’s largest collection of free, reusable code - the largest software repository in the world.</p>
         <div id="find">
             <img src="images/binoculars.svg" alt="binoculars-logo" height="100px">
             <h3>Find</h3>
-            <p>Libraries like <a class="link-no-underline"href="#">jQuery</a>, <a class="link-no-underline"href="#">Bootstrap</a>, <a class="link-no-underline"href="#">React</a>, and <a class="link-no-underline"href="#">Angular</a>, and components from frameworks such as <a class="link-no-underline"href="#">Ember</a>.</p>
+            <p>Libraries like <a class="link-deco-fix" href="#">jQuery</a>, <a class="link-deco-fix" href="#">Bootstrap</a>, <a class="link-deco-fix" href="#">React</a>, and <a class="link-deco-fix" href="#">Angular</a>, and components from frameworks such as <a class="link-deco-fix" href="#">Ember</a>.</p>
             <!--I think these links should have the lighter of the two reds in font-color. Also no link-underline. Also strong/bold?-->
 
 
